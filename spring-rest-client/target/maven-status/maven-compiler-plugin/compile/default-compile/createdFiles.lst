@@ -1,0 +1,5 @@
+Consumer\IntegrationService.class
+Consumer\AppConfig.class
+Consumer\ProductResponseInfo.class
+Consumer\GetAllProducts.class
+Consumer\Product.class

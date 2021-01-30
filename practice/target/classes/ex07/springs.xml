@@ -1,0 +1,26 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id="uService" class="ex07.UserService">
+<constructor-arg value="admin"></constructor-arg>
+
+<constructor-arg>
+<list>
+<value>lokesh</value>
+<value>satyakiran</value>
+<value>jeevan</value>
+<value>hithesh</value>
+<value>vishnu</value>
+<value>ravi</value>
+<value>latha</value>
+<value>deepthi</value>
+</list>
+</constructor-arg>
+</bean>
+
+
+</beans>

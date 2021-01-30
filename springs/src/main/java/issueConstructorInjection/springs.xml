@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<bean id ="pController"  class= "issueConstructorInjection.ProductController" >
+<constructor-arg ref="pService"></constructor-arg>
+</bean>
+
+<bean id ="pService"  class= "issueConstructorInjection.ProductService" >
+<constructor-arg ref="pHelper"></constructor-arg>
+</bean>
+
+<bean id ="pHelper"  class= "issueConstructorInjection.ProductHelper">
+<constructor-arg ref="pDAO"></constructor-arg>
+</bean>
+
+<bean id ="pDAO"  class= "issueConstructorInjection.ProductDAO" >
+<constructor-arg value="Oracle DataBase"></constructor-arg>
+</bean>
+
+</beans>

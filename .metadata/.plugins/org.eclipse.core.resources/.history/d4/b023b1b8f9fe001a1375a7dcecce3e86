@@ -1,0 +1,23 @@
+package enummm;
+
+public enum ColourType {
+	
+
+			BLUE,
+			RED,
+			BLACK,
+			GREEN,
+			WHITE,
+			BROWN,
+	        YELLOW,
+	
+	  
+	  
+	  
+	}
+	  
+			
+		  
+		
+
+

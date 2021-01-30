@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id="pDAO" class="issueSetterInjection.ProductDAO">
+<property name="dbName" value="Oracle Data Base"></property>
+</bean>
+
+<bean id="pHelper" class="issueSetterInjection.ProductHelper">
+<property name="dao" ref="pDAO"></property>
+</bean>
+
+<bean id="pService" class="issueSetterInjection.ProductService">
+<property name="helper" ref="pHelper"></property>
+</bean>
+
+<bean id="pController" class="issueSetterInjection.ProductController">
+<property name="service"  ref="pService"></property>
+</bean>	
+
+
+
+
+  
+</beans>
+  
+  
+  
+  
+  
+  

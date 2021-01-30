@@ -1,0 +1,22 @@
+package oopspractise;
+
+public class constructorTest {
+	constructorTest(double d) {
+		this(10);
+		System.out.println("double arg constructor");
+	}
+
+	constructorTest(int i) {
+		this();
+		System.out.println("int arg constructor");
+
+	}
+
+	constructorTest() {
+		this();
+		System.out.println("int arg constructor");
+	}
+public static void main(String[] args) {
+	constructorTest t1 = new constructorTest(10.5);
+}
+}

@@ -1,0 +1,12 @@
+package ExceptionsPractise;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class Test4 {
+	public static void main(String[] args)  {
+		//PrintWriter pw = new PrintWriter("abc.text");
+		//spw.println("hello");
+	}
+
+}

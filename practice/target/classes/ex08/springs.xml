@@ -1,0 +1,24 @@
+ <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<bean id="rService" class="ex08.RegistrationService">
+<constructor-arg>
+<map>
+<entry key="config1" value="user1"></entry>
+<entry key="config2" value="user2"></entry>
+<entry key="config3" value="user3"></entry>
+<entry key="config4" value="user4"></entry>
+</map>
+</constructor-arg>
+</bean>
+
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,15 @@
+@Controller
+public class ProductController {
+	@Autowired
+	private ProductService articleService;
+	
+	//Get all products....
+  @RequestMapping(value = "products", produces = "application/json")
+	public ResponseEntity<List<Product>> getAllArticles() {
+		List<Product> list = articleService.getAllArticles();
+		return new ResponseEntity<List<Product>>(list, HttpStatus.OK);
+	}
+  
+  
+  
+  }

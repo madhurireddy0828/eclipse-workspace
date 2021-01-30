@@ -1,0 +1,16 @@
+package variables;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		Student s = new Student();
+		s.Name="Madhuri";
+		System.out.println("Name:"+s.Name);
+		System.out.println("school code:"+Student.school_code_1000);
+		s.eat();
+		
+		
+		
+	}
+	
+
+}

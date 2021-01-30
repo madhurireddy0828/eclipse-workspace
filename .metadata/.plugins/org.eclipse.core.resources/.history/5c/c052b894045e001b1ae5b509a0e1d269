@@ -1,0 +1,13 @@
+package variables;
+
+public class Student {
+	String Name;
+	static int school_code;
+	public void eat() {
+		int numberOfBiscuits = 10;
+		System.out.println("has eaten"+numberOfBiscuits+"Biscuits");
+		
+	}
+	
+
+}

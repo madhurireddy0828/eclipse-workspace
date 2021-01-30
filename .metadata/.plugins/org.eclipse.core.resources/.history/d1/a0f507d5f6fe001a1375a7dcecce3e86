@@ -1,0 +1,19 @@
+package enummm;
+
+public class TestColourType {
+	
+public static void main(String[] args) {
+		//get obj for black
+		ColourType c = ColourType.BLACK;
+		System.out.println(c);
+		
+		
+		//get obj for WHITE
+		ColourType c1 = ColourType.WHITE;
+		System.out.println(c1);
+		
+		
+	}
+}
+
+

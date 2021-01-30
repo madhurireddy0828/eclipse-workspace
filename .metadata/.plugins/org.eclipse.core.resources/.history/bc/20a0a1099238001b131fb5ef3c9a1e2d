@@ -1,0 +1,22 @@
+@Transactional
+@Repository
+public class ProductDAO {
+	
+	@PersistenceContext	
+	private EntityManager entityManager;	
+	
+	public Product getArticleById(int articleId) {
+		return entityManager.find(Product.class, articleId);
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<Product> getAllArticles() {
+		String hql = "FROM Product as atcl ORDER BY atcl.articleId";
+		return (List<Product>) entityManager.createQuery(hql).getResultList();
+	}	
+
+
+
+
+
+}

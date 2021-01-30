@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;jdbc.TestReadRowExtractData1.java&apos; to &apos;TestReadRowExtractData.java&apos;&#x0D;&#x0A;- Original project: &apos;Springs&apos;&#x0D;&#x0A;- Original element: &apos;jdbc.TestReadRowExtractData1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;jdbc.TestReadRowExtractData.java&apos;" description="Rename compilation unit &apos;TestReadRowExtractData1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;jdbc{TestReadRowExtractData1.java" name="TestReadRowExtractData.java" references="false" stamp="1606026815424" version="1.0"/>
+</session>

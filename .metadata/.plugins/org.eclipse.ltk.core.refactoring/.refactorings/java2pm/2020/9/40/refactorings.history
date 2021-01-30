@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Generics&apos; to &apos;GenericsForMethods&apos;&#x0D;&#x0A;- Original project: &apos;java2pm&apos;&#x0D;&#x0A;- Original element: &apos;java2pm/src/Generics&apos;&#x0D;&#x0A;- Renamed element: &apos;java2pm/src/GenericsForMethods&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Generics&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Generics" name="GenericsForMethods" qualified="false" references="true" stamp="1601290685096" textual="false" version="1.0"/>
+</session>

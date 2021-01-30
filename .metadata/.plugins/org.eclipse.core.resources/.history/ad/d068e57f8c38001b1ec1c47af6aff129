@@ -1,0 +1,3 @@
+server.port=8079
+config=admin
+pageSize=10

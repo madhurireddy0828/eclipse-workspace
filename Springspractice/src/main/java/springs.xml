@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+<context:annotation-config/>
+<context:property-placeholder location="classpath:student-info.properities"/>
+
+ <!-- <bean id="student" class="com.di.Student">
+<property name="studentName" value="madhuri"/>
+<property name="id" value="1001"/>
+</bean> 
+
+  <bean id="sowmya" class="com.di.Student"> 
+ <property name="studentName" value="chinna"/> 
+ <property name="id" value="1002"/>
+ </bean> -->
+
+<!-- <bean id="student" class="com.di.Student">
+<constructor-arg name="studentName" value="madhuri"/>
+<constructor-arg name="id" value="1002"/>
+</bean>
+
+<bean id="madhu" class="com.di.Student">
+<constructor-arg name="id" value="1003"/>
+</bean>
+ -->
+ <!-- <bean id="matchCheatObjectiveValue" class="com.di.obj.MatchCheat"></bean>
+ 
+ <bean id="stu" class="com.di.obj.Student">
+ <property name="id" value="1001"/>
+ <property name="mathCheat" ref="matchCheatObjectiveValue"/>
+ </bean>
+ 
+ <bean id="AnotherStudent" class="com.di.obj.AnotherStudent">
+ <property name="cheat" ref="matchCheatObjectiveValue"/>
+ </bean> -->
+ 
+ <!-- <bean id="studentobj" class="com.di.obi.pra.Student"></bean>
+ <bean id="College" class="com.di.obi.pra.College">
+ <property name="studentName" ref="studentobj"/>
+ </bean>
+ -->
+  <!-- <bean id="heartobj" class="com.di.obj.autowiring.Heart"></bean>
+ <bean id="Human" class="com.di.obj.autowiring.Human" >
+ <property name="heart" ref="heartobj"/>
+ </bean>  -->
+ 
+ <!--  <bean id="heart" class="com.di.obj.autowiring.Heart"></bean>
+ <bean id="Human" class="com.di.obj.autowiring.Human" autowire="byName"></bean> 
+ 
+   -->
+  <!-- <bean id="heart" class="com.di.obj.autowiring.Heart"></bean>
+  <bean id="Human" class="com.di.obj.autowiring.Human" autowire="byType"></bean> -->
+  
+ <!--  <bean id="heart" class="com.di.obj.autowiring.Heart"></bean>
+  <bean id="Human" class="com.di.obj.autowiring.Human" autowire="constructor"></bean> -->
+  
+ <!--  <bean id="heart" class="com.di.obj.autowiring.Heart"></bean>
+ <bean id="Human" class="com.di.obj.autowiring.Human"></bean> -->
+ 
+ <!-- <bean id="Humanheart" class="com.di.obj.autowiring.Heart"></bean>
+ <bean id="heart" class="com.di.obj.autowiring.Heart"></bean>
+ <bean id="Human" class="com.di.obj.autowiring.Human"></bean>
+  -->
+  
+ <bean id="student" class="com.di.loadingfrompropertyfiles.Student">
+  <property name="name" value="${student.name}"/>
+ <property name="interestedcourse" value="${student.interestedcourse}"/>
+ <property name="hobby" value="${student.hobby}"/> 
+ </bean>
+  
+</beans>

@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean id = "aService" class="ex044.AccountService">
+<constructor-arg value="oracle"/>
+</bean>
+
+<bean id="uService" class="ex044.UserService">
+<constructor-arg value="system"/>
+<constructor-arg value="user@12345"/>
+</bean>
+
+<!-- 
+
+-->
+</beans>

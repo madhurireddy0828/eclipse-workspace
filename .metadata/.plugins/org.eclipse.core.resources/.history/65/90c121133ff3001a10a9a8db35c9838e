@@ -1,0 +1,6 @@
+package Reflections;
+
+public class Student extends Person{
+
+
+}

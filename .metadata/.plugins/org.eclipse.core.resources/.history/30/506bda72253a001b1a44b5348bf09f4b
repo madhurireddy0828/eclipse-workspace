@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+
+<session-factory>
+
+<!-- Database connection settings -->
+<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+<property name="connection.username">SYSTEM</property>
+<property name="connection.password">oracle</property>
+<property name="connection.pool_size">1</property>
+
+
+<!--hib configuration -->
+<!-- SQL dialect specifies the database -->
+<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
+
+<!-- Show all executed SQL to stdout -->
+<property name="show_sql">true</property>
+
+<!-- Drop and re-create the database schema on startup -->
+
+<!--<property name="hbm2ddl.auto">create</property>-->
+<property name="hbm2ddl.auto">update</property>
+
+<!--<mapping class="Basics.Visitor" />-->
+ 
+<mapping class="Basics.Employee" />
+ 
+<!--<mapping class="Composition.PersonWithAddress" />  -->
+
+<!--<mapping class="OneTOOne.EmployeeWithAddress" />-->
+<!--<mapping class="OneTOOne.AddressDetails" /> -->
+
+<!--<mapping class="OneTOMany.Customer" /> -->
+<!--<mapping class="OneTOMany.Accounts" /> -->
+
+<!--<mapping class="ManyTOMany.Student" />-->
+<!--<mapping class="ManyTOMany.Cource" />-->
+
+<!--<mapping class="TablePerHier.Person"/>-->
+<!--<mapping class="TablePerHier.EmployeeDetails"/>-->
+<!--<mapping class="TablePerHier.Student"/>-->
+
+<!--<mapping class="TablePerClass.Person1"/>-->
+<!--<mapping class="TablePerClass.Student1"/>-->
+<!--<mapping class="TablePerClass.Employee1"/>-->
+
+<!--<mapping class="JoinTable.Person2"/>-->
+<!--<mapping class="JoinTable.Employee2"/>-->
+<!--<mapping class="JoinTable.Student2"/>-->
+
+<!--<mapping class="Dates.Info1"/>-->
+<!--<mapping class="Dates.Info2"/>-->
+
+
+
+</session-factory>
+
+
+
+
+</hibernate-configuration>

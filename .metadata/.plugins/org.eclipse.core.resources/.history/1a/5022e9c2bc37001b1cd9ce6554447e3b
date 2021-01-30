@@ -1,0 +1,5 @@
+package com.mythri.dao;
+
+public class EmployeeListResponse {
+
+}
